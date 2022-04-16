@@ -1,0 +1,100 @@
+
+.fristclient{
+  margin-bottom: 70px;
+}
+.fristclient h1,
+.fristclient p{
+  text-align: center;
+}
+.fristclient p{
+  font-weight: 100;
+}
+.secondclient{
+  width: 1100px;
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  justify-content: space-between;
+  margin: 30px auto;
+ 
+  
+}
+.clienetbox{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  padding: 30px;
+  box-shadow: 0px 3px 10px rgba(156, 154, 154, 0.6);
+ 
+}
+.secondclient .clienetbox:nth-child(2){
+  margin: 0px 20px;
+}
+
+.secondclient p{
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 1.8rem;
+  margin: 10px 0px;
+}
+.clientbackground{
+  width: 900px;
+  height: 470px;
+  margin: 0px auto;
+  background: #F1F1F1;
+}
+.clientcontainer{
+  transform: translateY(-410px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ width: 1100px;
+margin: 0px auto;
+}
+.arrows{
+  display: flex;
+  justify-content: space-around;
+  background: white;
+  padding-top: 9px;
+  
+  width: 90px;
+}
+.arrow1 img{
+  padding: 10px 7px;
+}
+.arrow2 img{
+  padding: 10px 7px;
+  background: black;
+}
+
+@media screen and (max-width:500px) {
+  .client{
+    width: 90%;
+  
+  }
+  .fristclient{
+    margin: 70px auto;
+    width: 90%;
+  }
+  .clientbackground{
+    display: none;
+  }
+  .secondclient{
+    width: 90%;
+    margin: 10px auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(1,auto);
+  }
+  .clientcontainer{
+    transform: translateY(0);
+    margin-bottom: 250px;
+    width: 90%;
+
+  }
+  .secondclient .clienetbox:nth-child(2){
+    margin: 20px 0px;
+  }
+  
+}

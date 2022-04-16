@@ -1,0 +1,58 @@
+.advert{
+  /* background-color: aqua; */
+  width: 1100px;
+  margin: 150px auto;
+}
+.firstadvert{
+  margin-bottom:60px;
+}
+.firstadvert h1{
+  text-align: center;
+  font-size: 40px;
+  font-weight: 300;
+}
+.secondadvert{
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  justify-content: space-between;
+}
+.advertboxes{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.advertboxes p{
+  text-align: center;
+  font-weight: 100;
+}
+.advertboxes h3{
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.secondadvert img{
+  width: 70px;
+  margin-bottom: 35px;
+}
+#odd img{
+  margin-bottom: 55px;
+}
+
+@media screen and (max-width:500px) {
+  .advert{
+    width: 90%;
+    margin: 100px auto;
+  }
+  .secondadvert{
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+    justify-content: center;
+  
+  }
+  .advertboxes{
+    margin-bottom: 50px;
+  }
+
+}

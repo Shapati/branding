@@ -1,0 +1,118 @@
+.works{
+  width: 1100px;
+  margin: 2px auto;
+}
+.firstwork{
+  margin-bottom: 160px;
+}
+.firstwork h1{
+  text-align: center;
+  font-size: 50px;
+  font-weight: 400;
+  margin-bottom: 20px
+}
+.firstwork p{
+  text-align: center;
+  font-weight: 100;
+  
+ 
+}
+.secondworkbox h2{
+  font-weight: 500;
+  margin-bottom: 30px;
+ 
+}
+.secondworkbox p{
+  font-weight: 100;
+  line-height: 30px;
+
+}
+.workboxes{
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  justify-content: space-between;
+}
+.firstworkbox1{
+  width: 450px;
+  height: 450px;
+  background: url('../img/pink.svg') no-repeat center center/cover;
+  background-size: 450px;
+  margin-top: -100px;
+}
+.firstworkbox2{
+  width: 450px;
+  height: 450px;
+  background: url('../img/blue.svg') no-repeat center center/cover;
+  background-size: 450px;
+  margin-top: -100px;
+}
+.firstworkbox3{
+  width: 450px;
+  height: 450px;
+  background: url('../img/yellow.svg') no-repeat center center/cover;
+  background-size: 450px;
+  margin-top: -100px;
+}
+.inside1{
+  transform: translateY(70px) translateX(-25px);
+}
+.inside2 img{
+transform: translateX(100px) translateY(40px);
+}
+.insideodd img{
+  transform: translateX(85px) translateY(-50px) ;
+}
+
+@media screen and (max-width:500px) {
+  .works{
+    width: 90%;
+    margin: 30px auto;
+  }
+  .workboxes{
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+    justify-content: center;
+  }
+  .secondworkbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .secondworkbox h2{
+    text-align: center;
+  }
+  .secondworkbox p{
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  .firstworkbox1{
+    width: 350px;
+    height: 350px;
+    background: url('../img/pink.svg') no-repeat center center/cover;
+    background-size: 350px;
+    margin-top: -100px;
+  }
+  .firstworkbox2{
+    width: 350px;
+    height: 350px;
+    background: url('../img/blue.svg') no-repeat center center/cover;
+    background-size: 350px;
+    margin-top: -100px;
+  }
+  .firstworkbox3{
+    width: 350px;
+    height: 350px;
+    background: url('../img/yellow.svg') no-repeat center center/cover;
+    background-size: 350px;
+    margin-top: -100px;
+  }
+  .inside2 img{
+    transform: translateX(100px) translateY(40px);
+    width: 250px;
+    }
+    .insideodd img{
+      transform: translateX(85px) translateY(40px) ;
+      width: 250px;
+    }
+}

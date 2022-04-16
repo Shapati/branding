@@ -1,0 +1,159 @@
+section{
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  width: 1100px ;
+  margin: 0px auto;
+}
+.firstsection{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+  width: 650px;
+  
+}
+.firstsection h1{
+  font-size: 100px;
+  width: 100%;
+  line-height: 6.5rem;
+  font-weight: bolder;
+  margin: 30px 0px;
+}
+.firstsection p{
+  line-height: 2rem;
+  font-weight: 100;
+  margin-bottom: 30px;
+}
+
+.firstsection span{
+  color: var(--color);
+}
+.sectionlinks a:nth-child(1){
+  background: var(--color);
+  padding: 13px 25px;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0px 3px 10px rgb(0 0 0 / 0.6);
+  margin-right: 20px;
+}
+.sectionlinks a:nth-child(2){
+  color: var(--color);
+  text-decoration: none;
+  font-weight: 100;
+}
+.secondsection{
+  background: url('../img/Hero image.svg') no-repeat center center/cover;
+  background-size: 420px;
+  height: 650px;
+  margin-left: 130px;
+  padding: 0;
+
+}
+.image1 img{
+  width: 190px;
+  transform: translateX(220px) translateY(205px);
+}
+.image2 img{
+  width: 220px;
+  transform: translateX(220px) translateY(170px);
+}
+.image3 img{
+  width: 140px;
+  transform: translateX(20px) translateY(-100px);
+  
+}
+.image4 img{
+  width: 130px;
+  transform:  translateY(-85px);
+  
+}
+.image5 img{
+  width: 100px;
+  transform: translateY(-350px) translateX(90px);
+}
+.image6 img{
+  width: 130px;
+  transform: translateY(-650px) translateX(-40px);
+}
+.decorators{
+  width: 1100px;
+  margin: 0px auto;
+}
+
+#decorate1 img{
+  width: 300px;
+  transform:  translateY(-60px);
+}
+
+#decorate2 img{
+  position: relative;
+  width: 300px;
+  transform: translateY(-930px) translateX(-150px);
+}
+#decorate3 img{
+  position: relative;
+  width: 300px;
+  transform: translateY(-1130px) translateX(170px);
+  
+}
+@media screen and (max-width:500px) {
+section{
+  width: 90%;
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: repeat(1,auto);
+}
+.firstsection{
+  width: 90%;
+}
+.firstsection h1{
+  line-height: 5rem;
+  font-size: 50px;
+  width: 90%;
+}
+.firstsection p{
+  font-size: 14px;
+  
+}
+
+.secondsection{
+  margin-top: 50px;
+  background-size: 420px;
+  height: 650px;
+
+  margin-bottom: 400px;
+  margin-left: 0;
+  
+}
+.image1 img{
+  
+  display: none;
+}
+.image2 img{
+
+  display: none;
+}
+.image3 img{
+
+  display: none;
+  
+}
+.image4 img{
+  
+  display: none;
+  
+}
+.image5 img{
+ 
+  display: none;
+}
+.image6 img{
+ 
+  display: none;
+}
+
+.decorators{
+ display: none;
+}
+}
